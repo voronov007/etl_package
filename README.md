@@ -21,6 +21,7 @@ from ETL_package import load, transform, write_csv_output
 
 data = load("<imput_file_path>.txt")
 transformed_data = transform(data)
-write_csv_output(transformed_data, "<output_file_path>.csv") # optional
+# optional
+write_csv_output(transformed_data, "<output_file_path>.csv")
 ```
 `transformed_data` data is a list of lists.

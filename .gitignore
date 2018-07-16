@@ -22,31 +22,16 @@ atlassian-ide-plugin.xml
 # Virtualenv
 venv
 env
-eb-venv
-eb-deploy
-eb-deploy-venv
-eb_deploy_venv
 
 # Unit test / coverage reports
-htmlcov/
-.coverage
 .cache
 .pytest_cache/
-
-# Other
-staticfiles
-
-# Dumps for database
-/dumps
-
-
-# Logs of SQL
-sql_queries.log
 
 # Env vars for the Docker with sensitive info
 .env
 *.env
-.elasticbeanstalk/saved_configs/
 
-# Local DB
-ras_db_test.sqlite3
+# Build
+build/
+dist/
+*.egg-info
