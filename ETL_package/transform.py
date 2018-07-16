@@ -3,11 +3,11 @@ import csv
 from ETL_package.transformators import etl_interface
 
 
-def transform(reader: csv.DictReader) -> list:
+def transform(data: csv.DictReader) -> list:
     # create header: etl_interface keys have order as it is an OrderedDict
     output_matrix = [list(etl_interface.keys())]
 
-    for row in reader:
+    for row in data:
         has_errors = False
         output_row = []
         # etl_interface is an OrderedDict so for loop has an order too
