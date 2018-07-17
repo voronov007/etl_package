@@ -19,7 +19,7 @@ Below is an example for the file which lay in project root. In python module wri
 ```
 from ETL_package import load, transform, write_csv_output
 
-data = load("<imput_file_path>.txt")
+data = load("<input_file_path>.txt")
 transformed_data = transform(data)
 # optional
 write_csv_output(transformed_data, "<output_file_path>.csv")

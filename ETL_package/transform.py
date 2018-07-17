@@ -10,11 +10,11 @@ def transform(data: csv.DictReader) -> list:
     for row in data:
         has_errors = False
         output_row = []
-        # etl_interface is an OrderedDict so for loop has an order too
+        # etl_interface is an OrderedDict so "for" loop has an order too
         for column_name, transform_method in etl_interface.items():
             # remove whitespaces
             value = str(row[column_name]).strip(" ")
-            # do not write row if it has empty cell
+            # do not write row if it has an empty cell
             if value == "" or value == "-":
                 has_errors = True
                 break
